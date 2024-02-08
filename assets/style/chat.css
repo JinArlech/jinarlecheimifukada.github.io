@@ -1,0 +1,78 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #fff;
+  background-color: #36393f;
+}
+
+#discordApp {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  background-color: #2c2f33;
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.server-list, .channels .channel {
+  padding: 10px;
+  margin-bottom: 8px;
+}
+
+.server-list {
+  background-color: #23272a;
+}
+
+.channels .channel {
+  background-color: #2c2f33;
+  cursor: pointer;
+}
+
+.channels .channel:hover {
+  background-color: #3a3d41;
+}
+
+.chat-area {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-header {
+  background-color: #23272a;
+  padding: 20px;
+}
+
+.messages {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.message {
+  margin-bottom: 20px;
+}
+
+.message-form {
+  background-color: #40444b;
+  padding: 10px;
+}
+
+.message-form input {
+  width: 100%;
+  background-color: #484c52;
+  border: none;
+  padding: 10px;
+  color: #dcddde;
+}
+
+.message-form input:focus {
+  outline: none;
+  border: 1px solid #7289da;
+}

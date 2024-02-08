@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+    <link rel="stylesheet" href="/assets/style/dashboard.css">
+</head>
+<body>
+  <div id="adminDashboardApp">
+    <nav class="admin-navbar">
+      <ul>
+        <li><a href="#" v-on:click="currentView = 'visitorStats'">Visitor Stats</a></li>
+        <li><a href="#" v-on:click="currentView = 'addContent'">Add Content</a></li>
+        <li><a href="#" v-on:click="currentView = 'manageNews'">Manage News</a></li>
+        <li><a href="../index.html" v-on:click="logout">Logout</a></li>
+      </ul>
+    </nav>
+    
+    <section v-if="currentView === 'visitorStats'">
+      <h2>Visitor Statistics</h2>
+      <!-- Placeholder for visitor statistics -->
+    </section>
+    
+    <section v-if="currentView === 'addContent'">
+      <h2>Add Content</h2>
+      <!-- Form or interface to add content -->
+    </section>
+    
+    <section v-if="currentView === 'manageNews'">
+      <h2>Manage News</h2>
+      <!-- Interface to add, edit, or remove news articles -->
+    </section>
+  </div>
+  
+  <script>
+  const app = Vue.createApp({
+    data() {
+      return {
+        currentView: 'visitorStats' // Default view
+      };
+    },
+    methods: {
+      logout() {
+        // Implement logout functionality here
+        console.log('Logging out...');
+      }
+    }
+  });
+  
+  app.mount('#adminDashboardApp');
+  </script>
+  
+  <script src="https://unpkg.com/vue@next"></script>
+  <script src="/assets/js/dashboard.js"></script>
+</body>
+</html>

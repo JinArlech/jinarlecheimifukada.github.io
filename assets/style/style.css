@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&family=Poppins:wght@300;400;500;600;700;800&family=Protest+Riot&family=Recursive:wght@300;400;500;600;700&family=Roboto+Serif:opsz,wght@8..144,600&display=swap');
+
+* {
+  font-family: 'Recursive', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 2% 5%; 
+  padding: 2% 5%;
+  background-color: #001722;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4e6cd;
+  padding: 15px 0;
+  border-radius: 15px 15px 0 0;
+}
+
+.circle-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: auto 5px;
+}
+
+.red {
+  background-color: #932a02;
+}
+
+.purple {
+  background-color: #070b0f;
+}
+
+.black {
+  background-color: #252218;
+}
+
+.cream {
+  background-color: #e8b590;
+}
+
+.darkblue {
+  background-color: #001c30;
+}
+
+.logo {
+  margin: 10px 0;
+  font-size: 35px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+li a {
+  margin: 0 10px; /* Adjust the margins as needed */
+  text-decoration: none;
+  color: black;
+}
+
+.spotify-account {
+  margin: 15px 0;
+}
+
+#loginBtn {
+  margin: 10px auto;
+  border-radius: 25px;
+  padding: 10px 25px;
+  font-weight: 600;
+}
+
+main {
+  display: block;
+  margin: 0 auto;
+  max-width: auto;
+}
+
+.card-name {
+  background-image: url('../img/background.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px 25px 0;
+  max-width: 100%;
+  max-height: fit-content;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0 0 25px 25px;
+}
+
+.about {
+  text-align: center;
+  display: block;
+}
+
+.card {
+  border: 1px solid;
+  backdrop-filter: blur(5px);
+  color: white;
+  padding: 25px;
+  border-radius: 15px;
+  position: relative;
+}
+
+.card h3 {
+  font-size: 15px;
+  color: rgb(117, 113, 113);
+  margin: 0 0 7px;
+}
+
+.card h2 {
+  font-size: 35px;
+  color: white;
+  margin: 0 0 7px;
+}
+
+.card p {
+  font-weight: thin;
+  /* margin-bottom: 10px; */
+}
+
+.nationality {
+  display: flex;
+  list-style-type: none;
+  margin: 20px auto;
+  width: fit-content;
+  background-color: white;
+  padding: 10px;
+  border-radius: 25px;
+  font-weight: 700;
+  position: relative;
+  text-wrap: wrap;
+}
+
+.nationality li {
+  margin: 0 10px;
+  color: black;
+}
+
+.occupation {
+  margin: 10px auto;
+}
+
+.age {
+  display: flex;
+  list-style-type: none;
+  padding: 15px;
+  width: auto;
+  background-color: white;
+  border-radius: 25px;
+  font-weight: 700;
+}
+
+.age li {
+  margin: 0 auto;
+  color: black;
+}
+
+.profile img {
+  width: 100%;
+  margin: 25px 0;
+}
+
+.card-2 {
+  border: 1px solid;
+  backdrop-filter: blur(5px);
+  color: white;
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 50px;
+}
+
+.card-2 img {
+  width: 100%;
+  margin: auto 0;
+  border-radius: 15px;
+}
+
+.card-2 p {
+  writing-mode: vertical-rl;
+  margin: 10px auto;
+}
+
+.button-1 {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  max-width: 600px;
+  background-color: #001c30;
+  padding: 15px;
+  border-radius: 25px;
+}
+
+.button-1 li {
+  flex: 50%;
+  margin: 5px 0;
+}
+
+.link {
+  color: white;
+}
+
+.photo-container {
+  background-color: #f4e6cd;
+  border-radius: 25px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  grid-template-rows: auto; /* row height will be determined by the tallest item */
+  gap: 20px; /* Adjusted gap between grid items for more space */
+  align-items: start; /* Aligns items to the start of the grid area */
+  padding: 20px; /* Adds padding around the entire grid for spacing */
+  /* background-color: #000; Assuming a dark background as in the second image */
+}
+
+.photo-gallery h2 {
+  font-size: 35px;
+  color: white;
+  margin: 25px auto;
+  text-align: center;
+} 
+
+.photo-container a {
+  display: block; /* Makes sure the link fills the grid cell */
+  text-decoration: none; /* Removes underline from links */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adds shadow to each item */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.photo-container a:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
+}
+
+.photo-container img {
+  width: 100%; /* Ensures the image fills the cell */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 15px; /* Adjusts border-radius for rounded corners */
+  display: block; /* Removes extra space below the image */
+  object-fit: cover; /* Ensures the image covers the area, might clip the image */
+}
+
+/* Assuming you have titles or text to overlay on the images */
+.photo-container .photo-title {
+  position: absolute;
+  bottom: 10px; /* Spacing from the bottom */
+  left: 10px; /* Spacing from the left */
+  color: #fff; /* Text color */
+  font-size: 1.2em; /* Text size */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Text shadow for readability */
+}
+
+/* This container should be relative to position the title absolutely */
+.photo-container .photo-item {
+  position: relative;
+  overflow: hidden; /* Ensures nothing spills out of the item */
+  border-radius: 15px; /* Should match the img border-radius */
+}
+
+/* To only show the title on hover */
+.photo-container .photo-title {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.photo-container .photo-item:hover .photo-title {
+  opacity: 1;
+}
+
+.story {
+  width: fit-content;
+  margin: 0 auto;
+  border-radius: 0 0 25px 25px;
+}
+
+.story h2 {
+  font-size: 35px;
+  color: white;
+  margin: 25px auto;
+  text-align: center;
+}
+
+.story-container {
+  border-radius: 25px 25px 0 0;
+  background-color: #f4e6cd;
+  color: white;
+  text-align: justify;
+  color: black;
+  padding: 15px;
+}
+
+.logo-footer {
+  color: black;
+  display: flex;
+  flex-direction: row;
+  background-color: #f4e6cd;
+  border-radius: 0 0 25px 25px;
+}
+
+.loo-footer h1 {
+  text-align: center;
+}
+
+.logo-footer p {
+  text-align: justify;
+}

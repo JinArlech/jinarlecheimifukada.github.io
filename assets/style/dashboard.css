@@ -1,0 +1,104 @@
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #004d99;
+  --background-color: #121212; /* Dark theme background */
+  --text-color: #ffffff;
+  --link-hover-color: #cccccc;
+  --border-radius: 8px;
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* Admin Navbar Styles */
+.admin-navbar {
+  background-color: var(--secondary-color);
+  padding: 10px 20px;
+}
+
+.admin-navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.admin-navbar ul li {
+  margin-right: 20px;
+}
+
+.admin-navbar ul li a {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.admin-navbar ul li a:hover {
+  color: var(--link-hover-color);
+}
+
+/* Dashboard Grid Layout */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin: 20px;
+}
+
+/* Section Styles */
+section {
+  padding: 20px;
+  background-color: #1e1e1e; /* Slightly lighter than body for contrast */
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  transition: transform 0.3s ease-in-out;
+}
+
+section:hover {
+  transform: translateY(-5px);
+}
+
+h2 {
+  color: var(--primary-color);
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .admin-navbar ul {
+    flex-direction: column;
+  }
+
+  .admin-navbar ul li {
+    margin-bottom: 10px;
+  }
+}
+
+/* Additional Styles for Interactivity */
+input, button {
+  border-radius: var(--border-radius);
+  border: 1px solid var(--primary-color);
+  padding: 10px;
+  background-color: #292929; /* Dark input backgrounds */
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  background-color: var(--primary-color);
+  color: #000;
+  cursor: pointer;
+}
+
+input:focus, button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--primary-color);
+}
